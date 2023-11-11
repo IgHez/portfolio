@@ -1,0 +1,330 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+body {
+    margin: 0;
+    /* overflow: hidden; */
+    background-color: #05040c;
+    /* Dark midnight color */
+}
+
+section {
+    margin: 50px 0;
+}
+
+nav {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px 15px 50px !important;
+    transition: all 0.5s ease-in;
+    position: fixed;
+    width: 100vw;
+    background-color: white;
+    z-index: 100;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-area {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.cta-btn {
+    border: none;
+    background-color: white;
+}
+
+.cta-btn a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.home {
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+    overflow: hidden;
+    background-color: rgba(240, 240, 240, 0.24);
+}
+
+.social-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    position: fixed;
+    bottom: 30px;
+    gap: 30px;
+
+}
+
+.vertical-line {
+    width: 1px;
+    height: 30vh;
+    /* Adjust the height as needed */
+    background-color: #000;
+    /* Line color */
+    margin: 0 auto;
+    /* Center the line horizontally */
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.myImg {
+    max-width: 900px;
+    height: 90vh;
+}
+
+.subheading {
+    font-size: 30px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+p {
+    font-size: 20px;
+}
+
+.name-text {
+    font-size: 64px;
+}
+
+.social-icon {
+    padding-right: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    opacity: 0.8;
+}
+
+.section-title {
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+.section-title2 {
+    top: 0;
+    z-index: -10;
+    position: absolute;
+    color: rgb(201, 201, 201);
+    font-size: 100px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+}
+
+.myStack {
+    display: flex;
+}
+
+.text-primary {
+    color: red !important;
+}
+
+.nav-h2 {
+    color: yellow;
+}
+
+.skills-experience {
+    margin: 70px 0 !important;
+}
+
+.work-item {
+    display: none;
+}
+
+.active-tab {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.case-study {
+    display: none;
+}
+
+.case-study.active {
+    display: block;
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.center-card {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.work-item-img {
+    object-fit: cover;
+    width: 100vw !important;
+    max-height: 450px;
+}
+
+.card-container {
+    position: absolute;
+    top: 1;
+    z-index: 10;
+}
+
+.inverse {
+    flex-direction: row-reverse;
+}
+
+.card {
+    border: none !important;
+}
+
+.interest-tab {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.interest-tab:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.background-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #007bff;
+    /* Desired background color */
+    animation: fillAnimation 2s forwards ease-in-out;
+}
+
+.hamburger {
+    display: none;
+}
+
+@keyframes fillAnimation {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    70% {
+        width: 90%;
+        /* Adjust the width percentage before the bounce */
+    }
+
+    100% {
+        width: 100%;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 1313px) {}
+
+@media (max-width: 1313px) {}
+
+@media (max-width: 768px) {
+    .nav {
+        display: none !important;
+    }
+
+    .hamburger {
+        display: flex;
+        position: fixed;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .name-text {
+        font-size: 30px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .section-title2 {
+        font-size: 35px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .skills-experience {
+        margin: 0px 0 !important;
+    }
+}
+
+.close {
+    display: none !important;
+}
+
+.open {
+    display: flex !important;
+}
+
+.menu-items {
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    width: vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    top: 60px;
+    background-color: white;
+    padding: 0;
+}
+
+.hamburger-area {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hamburger-links {
+    margin-bottom: 50px;
+}
